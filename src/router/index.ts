@@ -5,7 +5,6 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'main',
       component: ()=> import("../Layout/Layout.vue"),
       redirect: "/dashboard",
       children: [
@@ -28,11 +27,18 @@ const router = createRouter({
         {
           path: "orders",
           component: ()=> import("../views/Orders/OrdersView.vue")
-        },
+        }
+      ]
+    },
+    {
+      path: "/auth",
+      component: ()=> import("../Layout/AuthLayout.vue"),
+      redirect: "/auth/login",
+      children: [
         {
-          path: "auth/login",
-          component: ()=> import("../views/auth/LoginView.vue")
-        }  
+        path: "login",
+        component: ()=> import("../views/auth/LoginView.vue")
+        }
       ]
     }
   ]

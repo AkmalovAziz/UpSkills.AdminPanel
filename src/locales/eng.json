@@ -1,0 +1,11 @@
+{
+    "dashboard": "dashboard",
+    "categories": "categories",
+    "courses": "courses",
+    "orders": "orders",
+    "users": "users",
+
+    "eng": "English",
+    "ru": "Russian",
+    "uz": "Uzbek"
+}

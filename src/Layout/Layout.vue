@@ -5,9 +5,11 @@ import Sidebar from "../components/common/SidebarComponent.vue";
 import Footer from "../components/common/FooterComponent.vue";
 import ThemeSetter from "../components/common/ThemeSetter.vue";
 import { RouterView } from "vue-router";
+import FlowbiteSetup from "@/views/FlowbiteSetup.vue";
 
 </script>
 <template>
+  <FlowbiteSetup></FlowbiteSetup>
   <ThemeSetter></ThemeSetter>
   <Header></Header>
   <Sidebar></Sidebar>

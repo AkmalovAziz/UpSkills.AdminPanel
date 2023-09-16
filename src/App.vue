@@ -5,9 +5,9 @@ import ThemeSetter from './components/common/ThemeSetter.vue';
 </script>
 
 <template>
+    <FlowbiteSetup></FlowbiteSetup>
     <RouterView></RouterView>
     <ThemeSetter></ThemeSetter>
-    <FlowbiteSetup></FlowbiteSetup>
 </template>
 
 <style scoped>
